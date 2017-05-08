@@ -10,8 +10,9 @@ public class BootReceiver extends BroadcastReceiver{
 
 	@Override
 	public void onReceive(Context context, Intent intent) {
-		Intent i = new Intent(context, MainActivity.class);
-        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        context.startActivity(i);
+		String packageName = context.getPackageName();
+		Intent launchIntent = context.getPackageManager().getLaunchIntentForPackage(packageName);
+		launchIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+		context.startActivity(launchIntent);
 	}
 }
