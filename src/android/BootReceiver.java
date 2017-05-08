@@ -1,4 +1,4 @@
-package com.example.plugin;
+package rodolfojnn.cordova.plugin.bootstart
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
