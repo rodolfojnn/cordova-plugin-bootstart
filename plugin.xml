@@ -26,6 +26,8 @@
     </receiver>
     </config-file>
 
+    <source-file src="src/android/BootReceiver.java" target-dir="src/rodolfojnn/cordova/plugin/bootstart"/>
+
   </platform>
 
 </plugin>
